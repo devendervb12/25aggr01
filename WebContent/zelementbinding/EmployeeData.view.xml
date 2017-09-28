@@ -4,11 +4,7 @@
 	<Page title="Title">
 		<content>
 
-	         <ComboBox id="idCombo" items="{/companyData/roles}">
-	              <items>
-	                 <core:Item text="{role}"/>
-	                 
-	              </items>
+	         <ComboBox id="idCombo">
 	         </ComboBox>
 	         
 	        

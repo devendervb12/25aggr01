@@ -13,6 +13,20 @@ sap.ui.controller("zelementbinding.EmployeeData", {
 		
 		this.getView().setModel(oModel);
 		
+		// get the reference of ComboBox
+		var oCombo = this.getView().byId("idCombo");
+		
+		// aggregation binding
+		
+		// <oControl>.bindAggregation("<aggregation>",
+		//                             "model path",
+		//                              oTemplate )
+		
+		var oItem = new sap.ui.core.Item({ text : "{role}"});
+		
+		oCombo.bindAggregation("items","/companyData/roles", oItem )
+		
+		
 	
 	},
 
